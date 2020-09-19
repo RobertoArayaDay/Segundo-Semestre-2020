@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Informascotas</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<script src="the_javascript.js"></script>
+<h1>Informascotas!!</h1>
+<h2>La página web para realizar y observar los resultados del censo en linea de mascotas en domicilio</h2>
+
+
+<div id="menu">
+    <button onclick="informarMascotas()">Informar mascotas</button>
+    <br>
+    <button onclick="mostrarListado()">Ver listado de mascotas</button>
+    <br>
+    <button onclick="mostrarEstadisticas()">Estadísticas</button>
+</div>
+
+
+<div id="informar" class="container">
+    <p class="subtitulos">Informar Mascotas</p>
+    <p><b>Rellene el formulario para informar las mascotas de un domicilio.</b></p>
+    <form method="POST" id="the_form">
+        <b>Domicilio</b>
+        <p>Región: <input type="text" name="region"></p>
+        <p>Comuna: <input type="text" name="comuna"></p>
+        <p>Nombre Calle: <input type="text" name="calle" size=100 maxlength=250></p>
+        <p>Número: <input type="text" name="numero" size=20 maxlength=20></p>
+        <p>Sector: <input type="text" name="sector" size=100 maxlength=100></p>
+        <br>
+        <br>
+        <b>Datos de Contacto</b>
+        <p>Nombre: <input type="text" name="nombre" size=100 maxlength=200></p>
+        <p>Email: <input type="email" name="email" size="100" maxlength=200></p>
+        <p>Número Celular: <input type="tel" name="celular" size="15" maxlength=11></p>
+        <br>
+        <br>
+        <b>Información de mascota</b>
+        <p>Tipo: <input type="tipo-mascota" name="tipo-mascota" ></p>
+        <p>Edad (en años): <input type="number" name="edad-mascota" size=5 maxlength=2></p>
+        <p>Color: <input type="text" name="color-mascota" size=30 maxlength=30></p>
+        <p>Raza: <input type="text" name="raza-mascota" size=30 maxlength=30></p>
+        <p>Esterilizado: <input name="estirilizado-mascota"></p>
+        <p>Vacunas al día: <input name="vacunas-mascota"></p>
+        <p>Foto: <input type="file" accept="image/*" name="foto-mascota"></p>
+    </form>
+</div>
+
+
+<div id="listado" class="container">
+    <p class="subtitulos">Ver listado de mascotas</p>
+    <table>
+        <tr>
+            <th>Fecha ingreso</th>
+            <th>Comuna</th>
+            <th>Nombre calle</th>
+            <th>Nombre contacto</th>
+            <th>Total mascotas</th>
+            <th>Total fotos</th>
+        </tr>
+        <tr>
+            <td>Providencia</td>
+            <td>Donde Juanito</td>
+            <td>Loros: 1  Perros: 2</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ñuñoa</td>
+            <td>Donde mi aguelita</td>
+            <td>Gatos: 5</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>La reina</td>
+            <td>Nueva York</td>
+            <td>Hamsters: 80</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Linderos</td>
+            <td>Melipilla</td>
+            <td>León: 1 Mono: 1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Buin</td>
+            <td>Donde vive el cuco</td>
+            <td>Coca: 1</td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+
+<div class="container">
+    <table>
+        <tr>
+            <th>Comuna</th>
+            <th>Calle</th>
+            <th>Tipo - Cantidad</th>
+            <th>Foto</th>
+        </tr>
+        <tr>
+            <td>Providencia</td>
+            <td>Donde Juanito</td>
+            <td>Loros: 1  Perros: 2</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ñuñoa</td>
+            <td>Donde mi aguelita</td>
+            <td>Gatos: 5</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>La reina</td>
+            <td>Nueva York</td>
+            <td>Hamsters: 80</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Linderos</td>
+            <td>Melipilla</td>
+            <td>León: 1 Mono: 1</td>
+            <td><img src="media/leon2.jpg"></td>
+        </tr>
+        <tr>
+            <td>Buin</td>
+            <td>Donde vive el cuco</td>
+            <td>Coca: 1</td>
+            <td><img src="media/coca3.jpg"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

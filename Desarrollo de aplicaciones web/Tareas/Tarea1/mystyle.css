@@ -1,0 +1,97 @@
+
+body {
+    background-color: peachpuff;
+    font-family: Times, sans-serif;
+    font-size: 24px;
+}
+
+
+h1 {
+    font-family: Charcoal, sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 8px;
+}
+
+.subtitulos{
+    text-align: center;
+    font-family: Charcoal, sans-serif;
+    color: tomato;
+    margin: 10px;
+    font-size: 40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#menu {
+    margin: 8px;
+    border: 6px solid tomato;
+    background-color: floralwhite;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    display: grid;
+}
+
+button{
+    background-color: tomato;
+    color: white;
+    margin: auto;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 30px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.container {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 20px;
+    border: 6px solid tomato;
+    background-color: floralwhite;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    background-color: tomato;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+#the_form{
+    line-height: 0.1
+}
+
+#informar{
+    display: none;
+    padding: -5px;
+}
+
+#listado{
+    display: none;
+}

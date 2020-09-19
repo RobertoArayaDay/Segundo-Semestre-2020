@@ -1,0 +1,157 @@
+#lang play
+(print-only-errors)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;1)
+;a)
+#|
+-(cons 'a 'b) representa un par, con el elemento de la izquierda es el simbolo a y el elemento de la derecha es el simbolo b
+-(list 'a 'b) representa una lista, donde el primer elemento es el simbolo a y el segundo elemento es el simbolo b
+-Recordar que una lista se define como una concatenación de pares, donde el ultimo elemento es el elemento vacio,
+por lo tanto su representación de pares seria: (cons 'a (cons 'b '()))
+
+- la notacíon '( elementos ) es el resultado de llamar la funcion list
+'(a b c d f) = (list a b c d f)
+|#
+
+;b)
+#|
+'((a b) c)
+'((a . (b . ())) . (c . ()))
+(list (list a b) c)
+
+es un par donde el elemento de la izquierda es (a . (b . ())) y el de la derecha es (c . ())
+El de la izquierda es la lista (a . (b . ()))
+por lo tanto queda la lista ((a b) c)
+|#
+
+;c)
+(define l (list '(a b c) '(d e f) '(g h i)))
+
+(car (cdr (cdr (car l)))) ; = c
+
+(car(cdr (car (cdr l)))) ; = e
+
+;d)
+;'(c)
+(cons 'c '())
+
+;'(a b)
+(cons 'a (cons 'b '()))
+
+;'((a b) (c))
+(cons (cons 'a (cons 'b '())) (cons (cons 'c '()) '()))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;2)
+#|
+pair-add1: Pair[Int][Int] -> Pair[Int][Int]
+Recibe un par de números y retorna un nuevo par dónde los dos elementos fueron incrementados en
+|#
+(define (pair-add1 p)
+  (cons (+ (car p) 1) (+ (cdr p) 1)))
+
+(test (pair-add1 (cons 0 1)) (cons 1 2))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;3)
+
+#|
+sums-coins:  Int x Int x Int -> Int
+retorna la cantidad de dinero total que hay en el monedero
+|#
+
+(define (sums-coins coin-500 coin-100 coin-50)
+  (+ (* coin-500 500) (* coin-100 100) (* coin-50 50)))
+
+(test (sums-coins 0 0 0) 0)
+(test (sums-coins 1 1 1) 650)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 4)
+#|
+tax: Int -> Int
+retorna el impuesto a pagar
+|#
+
+(define (tax brute-salary)
+  (cond [(< brute-salary 500000) 0]
+        [(and (> brute-salary 500000) (< brute-salary 750000))  (exact-round (* brute-salary 0.15))]
+        [else  (exact-round (* brute-salary 0.28))])
+  )
+
+(test (tax 100000) 0)
+(test (tax 600000) 90000)
+(test (tax 1000000) 280000)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 5)
+#|
+netpay: Int -> Int
+retorna el sueldo liquido del trabajador
+|#
+
+;ver 1
+#;(define (netpay h)
+  (- (* h 5000) (tax (* h 5000))))
+
+;ver 2
+#;(define (netpay h)
+  (define brute-salary (* h 5000))
+  (define taxes (tax brute-salary))
+  (- brute-salary taxes))
+
+(test (netpay 99) 495000)
+(test (netpay 100) 360000)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;6)
+
+(define (list-of-lesser l p)
+  (if (empty? l)
+      '()
+      (if (< (car l) p)
+          (cons (car l) (list-of-lesser (cdr l) p))
+          (list-of-lesser (cdr l) p))))
+          
+(define (list-of-greater l p)
+  (if (empty? l)
+      '()
+      (if (>= (car l) p)
+          (cons (car l) (list-of-greater (cdr l) p))
+          (list-of-greater (cdr l) p))
+      ))
+
+(define (quicksort-ugly l)
+   (if (empty? l)
+      '()
+      (let* ([p (first l)]
+             [rest-list (rest l)])
+         (append
+          (quicksort-ugly (list-of-lesser rest-list p))
+          (list p)
+          (quicksort-ugly (list-of-greater rest-list p)))
+        )
+      )
+  )
+
+(test (quicksort-ugly '(3 2 9 1)) '(1 2 3 9))
+(test (quicksort-ugly '(1 2 3 4)) '(1 2 3 4))
+(test (quicksort-ugly '(4 3 2 1)) '(1 2 3 4))
+
+(define (quicksort fun l)
+  (if (empty? l)
+      '()
+      (let* ([p (first l)]
+             [rest-list (rest l)])
+         (append
+          (quicksort fun (filter (\lambda (e) (fun e p)) rest-list))
+          (list p)
+          (quicksort fun (filter (\lambda (e) (not (fun e p))) rest-list)))
+        )
+      )
+  )
+
+(test (quicksort < '(3 2 9 1)) '(1 2 3 9))
+(test (quicksort < '(1 2 3 4)) '(1 2 3 4))
+(test (quicksort < '(4 3 2 1)) '(1 2 3 4))
