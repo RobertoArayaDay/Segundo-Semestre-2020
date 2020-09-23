@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Informascotas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Scope+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
 <script src="the_javascript.js"></script>
-<h1>Informascotas!!</h1>
-<h2>La página web para realizar y observar los resultados del censo en linea de mascotas en domicilio</h2>
 
+<div id="titlecontainer">
+<h1>Censo Mascotas</h1>
+<h2>La página web para realizar y observar los resultados del censo en linea de mascotas en domicilio</h2>
+</div>
 
 <div id="menu">
     <button onclick="informarMascotas()">Informar mascotas</button>
     <br>
     <button onclick="mostrarListado()">Ver listado de mascotas</button>
     <br>
-    <button onclick="mostrarEstadisticas()">Estadísticas</button>
+    <button onclick="mostrarEstadistica()">Estadísticas</button>
 </div>
 
 
@@ -25,8 +28,8 @@
     <p><b>Rellene el formulario para informar las mascotas de un domicilio.</b></p>
     <form method="POST" id="the_form">
         <b>Domicilio</b>
-        <p>Región: <input type="text" name="region"></p>
-        <p>Comuna: <input type="text" name="comuna"></p>
+        <p>Región: <input name="region" type="text" name="region"></p>
+        <p>Comuna: <input name= "region" type="text" name="comuna"></p>
         <p>Nombre Calle: <input type="text" name="calle" size=100 maxlength=250></p>
         <p>Número: <input type="text" name="numero" size=20 maxlength=20></p>
         <p>Sector: <input type="text" name="sector" size=100 maxlength=100></p>
@@ -62,38 +65,57 @@
             <th>Total fotos</th>
         </tr>
         <tr>
+            <td>13/08/2017</td>
             <td>Providencia</td>
-            <td>Donde Juanito</td>
-            <td>Loros: 1  Perros: 2</td>
-            <td></td>
+            <td>Seminario</td>
+            <td>Roberto Araya</td>
+            <td>2</td>
+            <td>2</td>
         </tr>
         <tr>
-            <td>Ñuñoa</td>
-            <td>Donde mi aguelita</td>
-            <td>Gatos: 5</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>La reina</td>
-            <td>Nueva York</td>
-            <td>Hamsters: 80</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Linderos</td>
-            <td>Melipilla</td>
-            <td>León: 1 Mono: 1</td>
-            <td></td>
-        </tr>
-        <tr>
+            <td>22/02/2009</td>
             <td>Buin</td>
-            <td>Donde vive el cuco</td>
-            <td>Coca: 1</td>
-            <td></td>
+            <td>O'Higgins</td>
+            <td>Benjamin Perez</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>30/03/2011</td>
+            <td>Ñuñoa</td>
+            <td>Av.Pedro de Validivia</td>
+            <td>Orieta Day</td>
+            <td>3</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>13/03/2013</td>
+            <td>Coquimbo</td>
+            <td>Los Mares</td>
+            <td>Nicolas Meneses</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>13/03/2013</td>
+            <td>San Bernardo</td>
+            <td>Las Ramas</td>
+            <td>Sebastian Muñoz</td>
+            <td>1</td>
+            <td>1</td>
         </tr>
     </table>
 
 </div>
+
+<div id="estadistica" class="container">
+    <p class="subtitulos">Estadísticas</p>
+    <img class= "grafico" src="media/grafico11.jpg">
+    <img class= "grafico" src="media/grafico2.jpg">
+    <img class= "grafico" src="media/grafico1.jpg">
+
+</div>
+
 
 <div class="container">
     <table>
@@ -105,35 +127,36 @@
         </tr>
         <tr>
             <td>Providencia</td>
-            <td>Donde Juanito</td>
-            <td>Loros: 1  Perros: 2</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Ñuñoa</td>
-            <td>Donde mi aguelita</td>
-            <td>Gatos: 5</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>La reina</td>
-            <td>Nueva York</td>
-            <td>Hamsters: 80</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Linderos</td>
-            <td>Melipilla</td>
-            <td>León: 1 Mono: 1</td>
-            <td><img src="media/leon2.jpg"></td>
+            <td>Seminario</td>
+            <td>Perros: 2</td>
+            <td><img src="media/loro.jpg"></td>
         </tr>
         <tr>
             <td>Buin</td>
-            <td>Donde vive el cuco</td>
-            <td>Coca: 1</td>
+            <td>O'Higgins</td>
+            <td>Gatos: 1</td>
+            <td><img src="media/gatos.jpg"></td>
+        </tr>
+        <tr>
+            <td>Ñuñoa</td>
+            <td>Av.Pedro de Validivia</td>
+            <td>Hamsters: 3</td>
+            <td><img src="media/hamsters.jpg"></td>
+        </tr>
+        <tr>
+            <td>Coquimbo</td>
+            <td>Los Mares</td>
+            <td>León: 1</td>
+            <td><img src="media/leon2.jpg"></td>
+        </tr>
+        <tr>
+            <td>San Bernardo</td>
+            <td>Las Ramas</td>
+            <td>Perro: 1</td>
             <td><img src="media/coca3.jpg"></td>
         </tr>
     </table>
 </div>
+
 </body>
 </html>

@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d698b1a8-7369-46a8-bf3a-73f95f6731e1" name="Default Changelist" comment="" />
+    <list default="true" id="d698b1a8-7369-46a8-bf3a-73f95f6731e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Arquitectura de Computadores/intro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/mystyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/the_javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/the_javascript.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +38,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1hYUd6V2MXZveeL10nDIyUmmqCi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,22 +51,24 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Web-Development-Test1/page/new_page.css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ejercicios/Ejercicio1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Roberto\Desktop\Segundo-Semestre-2020\Desarrollo de aplicaciones web\Tareas\Ejercicios\Ejercicio1" />
+      <recent name="C:\Users\Roberto\Desktop\Segundo Semestre 2020\Desarrollo de aplicaciones web\Tareas\Tarea1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Roberto\Desktop\Segundo Semestre 2020\Desarrollo de aplicaciones web\Tareas\Tarea1\nomostrar" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Roberto\Desktop\Segundo Semestre 2020\Desarrollo de aplicaciones web\Tareas\Tarea1" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,11 +82,26 @@
       <workItem from="1600187606107" duration="7403000" />
       <workItem from="1600464873914" duration="12414000" />
       <workItem from="1600517381714" duration="2824000" />
+      <workItem from="1600524340586" duration="1027000" />
+      <workItem from="1600714672287" duration="5355000" />
+      <workItem from="1600725450242" duration="9366000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600522777311">
