@@ -1,1 +1,101 @@
 #lang play
+(require math/flonum)
+
+
+#|
+Complete sus datos personales:
+NOMBRE Y APELLIDO: Roberto Araya Day
+RUT: 20.109.387-2
+|#
+
+
+; a) [6 pt]
+#|
+<CFraction> ::= (simple <integer>)
+             |  (compound <integer> <integer> <CFraction>)
+|#
+;;  Representación inductiva de fracciones continuas
+(deftype CFraction
+  (simple int)
+  (compound int numerador denominador))
+
+
+; B) [5 pt]
+;; eval :: CFraction -> Rational
+;; Evalúa una fracción continua y devuelve el número racional que representa.
+(define (eval fraccion)
+  (match fraccion
+      [(compound a b c)(+ a (/ b (eval c)))]
+      [(simple a) a]))
+
+
+
+; C) [5 pt]
+;; degree :: CFraction -> Integer
+;;Recibe CFraction y devuelve el grado de una fracción continua
+(define (degree fraccion)
+  (match fraccion
+      [(compound a b c)(+ 1 (degree c))]
+      [(simple a) 0]))
+
+
+; D) [8 pt]
+;; fold :: (Integer -> A) (Integer Integer CFraction -> A) -> (CFraction -> A)
+;; Captura el esquema de recursión asociado a CFraction 
+(define (fold f g)
+  (λ (bt)
+    (match bt
+      [(simple a) (f a)]
+      [(compound a b c) (g a b ((fold f g) c))])))
+
+
+
+; E) [8 pt]
+;; eval :: CFraction -> Rational
+(define (eval-fold fraccion)
+  ((fold identity (lambda (a b c) (+ a (/ b c)))) fraccion))
+
+
+;; degree-fold :: CFraction -> Integer
+(define (degree-fold fraccion)
+  ((fold (lambda (a) 0)(lambda (e b c) (+ 1 c))) fraccion))
+
+
+
+; f) [10 pt]
+;; mysterious-cf :: Integer -> CFraction
+;; Genera una secuencia de fracciones continuas
+(define (mysterious-cf n [con 0])
+  (cond
+    [(< n 0) "Error: argumento negativo"]
+    [(zero? n) (simple 3)]
+    [(and (> n 0) (zero? con)) (compound 3 (expt 1 2) (mysterious-cf n (+ con 1)))]
+    [(and (> n 0) (> con 0) (not (= con n))) (compound 6 (expt (+ (* con 2) 1) 2) (mysterious-cf n (+ con 1)))]
+    [(and (> n 0) (= con n)) (simple 6)]))
+  
+
+;g)[8 pt]
+;; from-to :: Integer Integer -> List[Integer]
+;; Retorna una lista de numeros naturales entre los valores entregados
+(define (from-to a b)
+  (if (= a b)
+      (cons a empty)
+      (cons a (from-to (+ a 1) b))))
+
+
+;; mysterious-list :: Integer -> List[Float]
+;; Devuelve la lista de los primeros n valores de la mysterious-cf
+(define (mysterious-list n)
+  (map fl (map eval (map mysterious-cf (from-to 0 n)))))
+
+
+
+;h)[10 pt]
+;; rac-to-cf :: Rational -> CFraction
+;; Transforma un numero racional no-negativoen su representación en forma de fraccion continua
+
+(define (rac-to-cf number)
+  (if (integer? number)
+      (simple number)
+      (compound (floor number) 1 (rac-to-cf (/ 1 (- number (floor number)))))))
+

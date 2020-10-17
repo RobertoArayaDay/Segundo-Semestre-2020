@@ -18,23 +18,48 @@
     </expand>
     <select />
   </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d698b1a8-7369-46a8-bf3a-73f95f6731e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Arquitectura de Computadores/intro.pdf" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/extra/acepta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/extra/formulario1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/extra/formulario2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/extra/formulario3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/extra/formulario4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/extra/formulario5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquitectura de Computadores/Tareas/Tarea1/Circuito_tarea1.circ" beforeDir="false" afterPath="$PROJECT_DIR$/../../Arquitectura de Computadores/Tareas/Tarea1/Circuito_tarea1.circ" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/1_Tarea_1(1).pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tarea1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tarea1/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/mystyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/nomostrar/informar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/nomostrar/listado.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tarea1/the_javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/the_javascript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Estadística/apunte_9_9_.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lenguajes de Programación/Trabajos/Tarea1/Tarea1.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lenguajes de Programación/Trabajos/Tarea1/Tarea1.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lenguajes de Programación/Trabajos/Tarea1/Tarea1.rkt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lenguajes de Programación/Trabajos/Tarea1/Tarea1.rkt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -51,7 +76,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ejercicios/Ejercicio1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ejercicios/Ejercicio2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,7 +85,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -72,6 +98,9 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d698b1a8-7369-46a8-bf3a-73f95f6731e1" name="Default Changelist" comment="" />
@@ -85,6 +114,16 @@
       <workItem from="1600524340586" duration="1027000" />
       <workItem from="1600714672287" duration="5355000" />
       <workItem from="1600725450242" duration="9366000" />
+      <workItem from="1601157938404" duration="12639000" />
+      <workItem from="1601181936854" duration="74000" />
+      <workItem from="1601216163931" duration="25022000" />
+      <workItem from="1601338802614" duration="10302000" />
+      <workItem from="1601383218484" duration="9595000" />
+      <workItem from="1601429366623" duration="684000" />
+      <workItem from="1601475559384" duration="19923000" />
+      <workItem from="1601521690334" duration="504000" />
+      <workItem from="1601753060309" duration="5237000" />
+      <workItem from="1601938355521" duration="2108000" />
     </task>
     <servers />
   </component>
@@ -104,21 +143,33 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601477117392">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1601477117392" />
+    <state x="448" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601216782465">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="448" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601216782465" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600522777311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600522777311" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1600469095376">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1601419247148">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600469095376" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1600467616028">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601419247148" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1601220144217">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600467616028" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600197431659">
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601220144217" />
+    <state x="0" y="0" width="1361" height="715" key="dock-window-1" timestamp="1601511279679">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600197431659" />
+    <state x="0" y="0" width="1361" height="715" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1601511279679" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601516114453">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601516114453" />
   </component>
 </project>
